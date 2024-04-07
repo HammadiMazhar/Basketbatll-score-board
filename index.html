@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Score Board</title>
+</head>
+<body>
+    <h1 class="heading">Basket Ball Score board</h1>
+    <div class="scoreboard-container">
+        <div class="team">
+            <h1>Home</h1>
+            <div class="scoreboard" id="home">
+                <div class="score" id="home-score">0</div>
+            </div>
+            <div class="buttons">
+                <button onclick="add1()">+1</button>
+                <button onclick="add2()">+2</button>
+                <button onclick="add3()">+3</button>
+            </div>
+        </div>
+        <div class="team">
+            <h1>Guest</h1>
+            <div class="scoreboard" id="guest">
+                <div class="score" id="guest-score">0</div>
+            </div>
+            <div class="buttons">
+                <div class="buttons">
+                    <button onclick="guestAdd1()">+1</button>
+                    <button onclick="guestAdd2()">+2</button>
+                    <button onclick="guestAdd3()">+3</button>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="reset-btn">
+        <button id="reset-all" onclick="reset()">Reset-All</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+
+.heading{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.scoreboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start to handle varying heights gracefully */
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.team h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.scoreboard {
+    padding: 20px;
+    background-color: #1E2D24;
+    color: #EFF6EE;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 200px; /* Adjust height as necessary */
+    margin-bottom: 10px; /* Space between scoreboard and buttons */
+}
+
+.score {
+    font-size: 4em;
+    text-align: center;
+    font-family: Orbitron;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Match the scoreboard width */
+    max-width: 250px; /* Ensure buttons container does not exceed scoreboard width */
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    flex-grow: 1; /* Ensures buttons expand to fill the container evenly */
+    margin: 0 5px; /* Adds space between buttons */
+    border: 2px solid #4FB286;
+    border-radius: 8px;
+}
+
+button:hover{
+    background-color: #3C896D;
+    border: 0px;
+}
+
+.reset-btn{
+display: block;
+width: 150px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 40px;
+}
+
+#reset-btn:hover{
+    background-color: rebeccapurple;
+}
